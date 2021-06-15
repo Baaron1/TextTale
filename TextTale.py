@@ -7,7 +7,7 @@ import random
 
 totallove = 1
 agsorelife = 1
-Sanslife = 1
+sanslife = 1
 papyruslife = 1
 undynelife = 1
 mettatonlife = 1

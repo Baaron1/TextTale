@@ -6,6 +6,7 @@ import random
 
 
 totallove = 1
+totalhp = 20
 agsorelife = 1
 sanslife = 1
 papyruslife = 1
@@ -13,7 +14,7 @@ undynelife = 1
 mettatonlife = 1
 mettatonexlife = 1
 butterscotchpie = 0
-totalfun = random.randint(0, 1000)
+totalfun = random.randint(0, 100)
 child = str(input("name the fallen child:"))
 if child == "Gaster" or child == "gaster":
     exit()
@@ -387,7 +388,7 @@ if torielquestion2 == "snail fact" or torielquestion2 == "Snail fact":
     time.sleep(1)
     print("How about this one")
     time.sleep(2)
-    print('"While slow snails are actually incredibly active especially when they are at a 666 fun level."')
+    print('"While slow snails are actually incredibly active especially when they are at a 66 fun level."')
     time.sleep(2)
     print("Would you like to know how much fun you are at?")
     time.sleep(1)

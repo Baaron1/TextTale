@@ -7,6 +7,7 @@ import random
 
 totallove = 1
 butterscotchpie = 0
+totalfun = random.randint(0, 1000)
 child = str(input("name the fallen child:"))
 time.sleep(1)
 print("this is your name "  +  str(child))
@@ -374,4 +375,17 @@ if torielquestion2 == "snail fact" or torielquestion2 == "Snail fact":
     time.sleep(1)
     print("How about this one")
     time.sleep(2)
-    print('"..."')
+    print('"While slow snails are actually incredibly active especially when they are at a 666 fun level."')
+    time.sleep(2)
+    print("Would you like to know how much fun you are at?")
+    time.sleep(1)
+    howmuchfun = input(":")
+    if howmuchfun == "yes" or howmuchfun == "Yes":
+        print("Okay, it seems you are at...")
+        time.sleep(2)
+        print(f"{howmuchfun} fun!")
+if torielquestion2 == "how to exit" or torielquestion2 == "How to exit":
+    time.sleep(2)
+print("Wait here...")
+time.sleep(2)
+print("There is something I must take care of.")

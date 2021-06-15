@@ -6,9 +6,21 @@ import random
 
 
 totallove = 1
+agsorelife = 1
+Sanslife = 1
+papyruslife = 1
+undynelife = 1
+mettatonlife = 1
+mettatonexlife = 1
 butterscotchpie = 0
 totalfun = random.randint(0, 1000)
 child = str(input("name the fallen child:"))
+if child == "Gaster" or child == "gaster":
+    exit()
+if child == "Flowey" or child == "flowey":
+    print("Hey! I already chose that name.")
+    time.sleep(3)
+    exit()
 time.sleep(1)
 print("this is your name "  +  str(child))
 time.sleep(1)

@@ -281,3 +281,6 @@ print("Oh my god! I think I left it in the oven!")
 time.sleep(2)
 print("I will be back child!")
 time.sleep(2)
+newhomewaitfortoriel = input("Wait here for Toriel or go explore the house? (wait or explore)")
+if newhomewaitfortoriel == "wait" or newhomewaitfortoriel == "Wait":
+    print("You wait for Toriel")

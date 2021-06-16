@@ -1,6 +1,7 @@
 import tkinter as tk
 import time
 import os
+import webbrowser
 from tkinter import PhotoImage, Tk
 from tkinter.ttk import *
 
@@ -26,6 +27,31 @@ opentt.pack()
 
 opencred = Button(root, text="View Credits", command=credbtn)
 opencred.pack()
+
+
+devmode = input()
+if devmode == "developer mode" or devmode == "Developer mode" or devmode == "Developer Mode":
+    print("You are now accessing developer mode")
+    q1 = input("What is your command?: ")
+    if q1 == "fake":
+        print("Oh, so you really do know. You must really be the creator. \n Welcome back")
+        time.sleep(2)
+        print("Is there something you would like to access or are you just messing around?")
+        time.sleep(1)
+        q11 = input(": ")
+        if q11 == "yes":
+            print("Well too bad you have been showing off to much recently")
+            exit()
+        else:
+            exit()
+    else:
+        print("Wait a minute...")
+        time.sleep(2)
+        print("That is not the password!!!!")
+        time.sleep(2)
+        print("INTRUDER!!!")
+        time.sleep(3)
+        exit()
 
 
 root.mainloop()

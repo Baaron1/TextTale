@@ -31,8 +31,17 @@ def exitcmd():
     exit()
 
 
+def opndmo():
+    os.startfile("demo.py")
+    exit()
+
+
 opentt = Button(root, text="Start Game", command=cmd1)
 opentt.pack()
+
+
+demobtn = Button(root, text="Play the Demo", command=opndmo)
+demobtn.pack()
 
 
 opencred = Button(root, text="View Credits", command=credbtn)

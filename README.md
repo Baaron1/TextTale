@@ -1,13 +1,8 @@
 # TextTale
 HOW TO RUN:
 
-
-Open the "main.py" file
-You will be prompted to look at the credits or start the game
-Select the option that starts the game
-
-
-If for some reason you want to play the demo select it in "main.py"
+Open the "TextTale.py" File to run the game
+If for you want to play the demo run "demo.py"
 
 
 

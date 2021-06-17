@@ -3,6 +3,7 @@ import os
 import sys
 import time
 import random
+import playsound
 
 
 totallove = 1
@@ -514,6 +515,9 @@ if fighttoriel1 == "attack" or fighttoriel1 == "Attack":
     time.sleep(2)
     print("Toriel turns into dust")
     time.sleep(2)
+    totallove = totallove + 1
+    print(f"You gained LOVE! You are now at {totallove} LOVE")
+    time.sleep(2)
     print("You walk through the door")
 print("TEXTTALE")
 time.sleep(5)
@@ -539,3 +543,9 @@ print("There are foot steps approaching from behind...")
 time.sleep(2)
 print("H U M A N . . .")
 time.sleep(2)
+print("Don't you know how to greet a new pal?")
+time.sleep(2)
+print("Turn around and shake my hand")
+time.sleep(2)
+print("You turn around and shake his hand")
+playsound('whoopee.mp3')

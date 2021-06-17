@@ -21,12 +21,30 @@ def credbtn():
     exit()
 
 
+def gtpge():
+    webbrowser.open("https://github.com/Baaron1/TextTale")
+
+
+def exitcmd():
+    print("Sorry to see you go")
+    time.sleep(2)
+    exit()
+
+
 opentt = Button(root, text="Start Game", command=cmd1)
 opentt.pack()
 
 
 opencred = Button(root, text="View Credits", command=credbtn)
 opencred.pack()
+
+
+gitpage = Button(root, text="View the GitHub page", command=gtpge)
+gitpage.pack()
+
+
+exitbutton = Button(root, text="Exit", command=exitcmd)
+exitbutton.pack()
 
 
 devmode = input()

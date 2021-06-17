@@ -41,6 +41,7 @@ if devmode == "developer mode" or devmode == "Developer mode" or devmode == "Dev
         q11 = input(": ")
         if q11 == "yes":
             print("Well too bad you have been showing off to much recently")
+            time.sleep(10)
             exit()
         else:
             exit()
@@ -50,8 +51,10 @@ if devmode == "developer mode" or devmode == "Developer mode" or devmode == "Dev
         print("That is not the password!!!!")
         time.sleep(2)
         print("INTRUDER!!!")
-        time.sleep(3)
+        time.sleep(10)
         exit()
+else:
+    print("Sorry I do not recognise that as a command")
 
 
 root.mainloop()

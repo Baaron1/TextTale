@@ -3,7 +3,7 @@ import os
 import sys
 import time
 import random
-import playsound
+import winsound
 
 
 totallove = 1
@@ -548,4 +548,4 @@ time.sleep(2)
 print("Turn around and shake my hand")
 time.sleep(2)
 print("You turn around and shake his hand")
-playsound('whoopee.mp3')
+winsound.PlaySound('whoopee.mp3', winsound.SND_FILENAME)

@@ -1,9 +1,29 @@
-import pickle
-import os
-import sys
-import time
-import random
-import playsound
+
+try:
+    import pickle
+    import os
+    import sys
+    import time
+    import random
+    import playsound
+except Exception:
+    import os
+    print(("="*32)+"\nInstalling required packages...\n"+("="*32))
+try:
+    os.system("pip install pickle")
+    os.system("pip install playsound")
+    os.system("pip install random")
+except Exception:
+    os.system("pip3 install pickle")
+    os.system("pip3 install playsound")
+    os.system("pip3 install random")
+finally:
+    import pickle
+    import os
+    import sys
+    import time
+    import random
+    import playsound
 
 
 totallove = 1

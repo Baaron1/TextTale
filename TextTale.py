@@ -16,6 +16,8 @@ toriellife = 1
 mettatonlife = 1
 mettatonexlife = 1
 butterscotchpie = 0
+spiderdonuts = 0
+totalgold = 20
 totalfun = random.randint(0, 100)
 child = str(input("name the fallen child:"))
 if child == "Gaster" or child == "gaster":
@@ -213,7 +215,7 @@ print("Here comes Nabstablook")
 time.sleep(1)
 whattodonabfirst = input("Attack or Cheer")
 time.sleep(1)
-if whattodonabfirst == "Cheer":
+if whattodonabfirst == "Cheer" or whattodonabfirst == "cheer":
     print("Nabstablook: heh...")
     time.sleep(1)
     print("Nabstablook attacks!")
@@ -237,7 +239,7 @@ if whattodonabfirst == "Cheer":
     time.sleep(2)
     print("I will get out of your way now...")
     time.sleep(2)
-if whattodonabfirst == "Attack":
+if whattodonabfirst == "Attack" or wwhattodonabfirst == "attack":
     print("Nabstablook:... You know you can't kill me right? I'm like... A ghost and all.")
     time.sleep(2)
     print("Nabstablook: This is awkward I will just get out of your way")
@@ -278,6 +280,8 @@ if spiderbakesaleornah == "right":
         if buyadonutorno == "yes":
             print("You purchased a donut")
             time.sleep(2)
+            totalgold = totalgold - 7
+            spiderdonuts = spiderdonuts + 1
 print("You enter the 'up' room")
 time.sleep(2)
 print("You are outside!")
@@ -551,4 +555,6 @@ print("You turn around and shake his hand")
 winsound.PlaySound('whoopee.mp3', winsound.SND_FILENAME)
 time.sleep(2)
 print("A whoopee cushion???")
+time.sleep(2)
+print("heheh... the old whoopee cushion in the hand trick")
 time.sleep(2)

@@ -1,3 +1,9 @@
+import os
+print("Installing required packages, this may take a while...")
+os.system('cmd /c "pip install pickle"')
+os.system('cmd /c "pip install winsound"')
+
+
 import pickle
 import os
 import sys
@@ -19,7 +25,7 @@ butterscotchpie = 0
 spiderdonuts = 0
 totalgold = 20
 totalfun = random.randint(0, 100)
-child = str(input("name the fallen child:"))
+child = str(input("name the fallen child: "))
 if child == "Gaster" or child == "gaster":
     exit()
 if child == "Flowey" or child == "flowey":
@@ -562,3 +568,4 @@ print("it's ALWAYS funny.")
 time.sleep(2)
 print("anyways, \n you're a human right?")
 time.sleep(2)
+os.startfile("credits.py")

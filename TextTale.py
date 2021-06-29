@@ -30,6 +30,7 @@ totalgold = 20
 totalfun = random.randint(0, 100)
 totalsanstries = 0
 totalpapyrustries = 0
+totalkills = 0
 child = str(input("name the fallen child: "))
 if child == "Gaster" or child == "gaster":
     exit()
@@ -170,6 +171,7 @@ if firstfroggitcomporfight == "fight":
     time.sleep(1)
     print("You killed the froggit...")
     time.sleep(2)
+    totalkills = totalkills + 1
     print("You gained LOVE!")
     totallove = totallove + 1
     print(f"Your love is now at {totallove}")
@@ -276,6 +278,7 @@ if killorsparewhismunfirst == "attack" or killorsparewhismunfirst == "Attack":
     print("You killed the whimsun in 1 shot!")
     time.sleep(2)
     totallove = totallove + 1
+    totalkills = totalkills + 1
     print("Your LOVE has increased!")
     print(f"You are now at {totallove} LOVE!")
     time.sleep(1)
@@ -535,6 +538,7 @@ if fighttoriel1 == "attack" or fighttoriel1 == "Attack":
         time.sleep(2)
     print("You hit Toriel again")
     toriellife = toriellife - 1
+    totalkills = totalkills + 1
     print("You...")
     time.sleep(1)
     print("Really hate me that much?")
@@ -544,6 +548,14 @@ if fighttoriel1 == "attack" or fighttoriel1 == "Attack":
     totallove = totallove + 1
     print(f"You gained LOVE! You are now at {totallove} LOVE")
     time.sleep(2)
+    if totallove <= 1:
+        totalhp = 20
+    elif totallove == 2:
+        totalhp = 24
+    elif totallove == 3:
+        totalhp = 28
+    elif totallove == 4:
+        totalhp = 32
     print("You walk through the door")
 time.sleep(2)
 print("TEXTTALE")

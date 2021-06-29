@@ -1,6 +1,7 @@
 import os
 print("Installing required packages, this may take a while...")
 os.system('cmd /c "pip install pickle"')
+print("Installing next package, please wait...")
 os.system('cmd /c "pip install winsound"')
 
 
@@ -229,6 +230,7 @@ if whattodonabfirst == "Cheer" or whattodonabfirst == "cheer":
     print("Nabstablook attacks!")
     time.sleep(2)
     print("You take 1 damage!")
+    totalhp = totalgp - 1
     time.sleep(1)
     print("You tell nabstablook a joke...")
     time.sleep(2)
@@ -247,18 +249,28 @@ if whattodonabfirst == "Cheer" or whattodonabfirst == "cheer":
     time.sleep(2)
     print("I will get out of your way now...")
     time.sleep(2)
-if whattodonabfirst == "Attack" or wwhattodonabfirst == "attack":
+    if totallove <= 1:
+        totalhp = 20
+    elif totallove == 2:
+        totalhp = 24
+    elif totallove == 3:
+        totalhp = 28
+    elif totallove == 4:
+        totalhp = 32
+if whattodonabfirst == "Attack" or whattodonabfirst == "attack":
     print("Nabstablook:... You know you can't kill me right? I'm like... A ghost and all.")
     time.sleep(2)
     print("Nabstablook: This is awkward I will just get out of your way")
+    time.sleep(2)
+    print("Nabstablook vanishes")
     time.sleep(2)
 print("You walk past the leaves nabstablook was on")
 time.sleep(2)
 print("You encounter a whimsun!")
 time.sleep(2)
 print("Attack or Spare")
-killorsparewhismunfirst = input(":")
-if killorsparewhismunfirst == "Attack":
+killorsparewhismunfirst = input(": ")
+if killorsparewhismunfirst == "attack" or killorsparewhismunfirst == "Attack":
     print("You killed the whimsun in 1 shot!")
     time.sleep(2)
     totallove = totallove + 1
@@ -327,7 +339,7 @@ if newhomewaitfortoriel == "wait" or newhomewaitfortoriel == "Wait":
     print("You explore the house")
 if newhomewaitfortoriel == "explore" or newhomewaitfortoriel == "Explore":
     time.sleep(1)
-print("There are two rooms...")
+print("There are three rooms...")
 newhomeroom12or3 = input("Room 1 2 or 3?")
 if newhomeroom12or3 == "3":
     print("You see a sign")
@@ -336,7 +348,7 @@ if newhomeroom12or3 == "3":
     time.sleep(1)
     print("You look at room 2")
     time.sleep(3)
-    print("Oh no it seems this is Toriel's room.")
+    print("Oh no, it seems this is Toriel's room.")
     time.sleep(2)
     print("You are a decent human so you do not go in")
     time.sleep(2)
@@ -517,7 +529,7 @@ if fighttoriel1 == "attack" or fighttoriel1 == "Attack":
     gethitbytorielmurder1 = random.randint(1, 10)
     if gethitbytorielmurder1 >= 6:
         print("Toriel's attack hits you lose 3 hp")
-        totalhp = totalhp - 1
+        totalhp = totalhp - 3
         time.sleep(2)
     print("You hit Toriel again")
     toriellife = toriellife - 1
@@ -531,6 +543,7 @@ if fighttoriel1 == "attack" or fighttoriel1 == "Attack":
     print(f"You gained LOVE! You are now at {totallove} LOVE")
     time.sleep(2)
     print("You walk through the door")
+time.sleep(2)
 print("TEXTTALE")
 time.sleep(5)
 print("You walk forward...")

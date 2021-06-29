@@ -1,5 +1,7 @@
 import os
 print("Installing required packages, this may take a while...")
+time.sleep(1)
+print("If you see an ERROR, don't freak out this probably means you already have the package installed.")
 os.system('cmd /c "pip install pickle"')
 print("Installing next package, please wait...")
 os.system('cmd /c "pip install winsound"')

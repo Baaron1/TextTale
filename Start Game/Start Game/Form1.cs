@@ -71,5 +71,10 @@ namespace Start_Game
         {
             System.Diagnostics.Process.Start("https://github.com/Baaron1/TextTale/issues");
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Baaron1/TextTale");
+        }
     }
 }

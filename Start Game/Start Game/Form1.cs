@@ -61,5 +61,10 @@ namespace Start_Game
         {
             Process.Start(@"demo.py");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"credits.py");
+        }
     }
 }

@@ -117,6 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Game info:
+TextTale is a Undertale AU made completely out of text!
+You can check out "Undertale" the original game at: 
+https://store.steampowered.com/app/391540/Undertale/
+
+Also view our Github page at:
+https://github.com/Baaron1/TextTale
+
+If you find any bugs typos or errors please report them on out Issues page at
+Github
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

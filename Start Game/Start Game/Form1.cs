@@ -66,5 +66,10 @@ namespace Start_Game
         {
             Process.Start(@"credits.py");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Baaron1/TextTale/issues");
+        }
     }
 }

@@ -29,6 +29,26 @@ import colored
 
 totallove = 1
 totalhp = 20
+lvl1maxhp = 20
+lvl2maxhp = 24
+lvl3maxhp = 28
+lvl4maxhp = 32
+lvl5maxhp = 36
+lvl6maxhp = 40
+lvl7maxhp = 44
+lvl8maxhp = 48
+lvl9maxhp = 52
+lvl10maxhp = 56
+lvl11maxhp = 60
+lvl12maxhp = 64
+lvl13maxhp = 68
+lvl14maxhp = 72
+lvl15maxhp = 76
+lvl16maxhp = 80
+lvl17maxhp = 84
+lvl18maxhp = 88
+lvl19maxhp = 92
+lvl20maxhp = 99
 agsorelife = 1
 sanslife = 1
 papyruslife = 1
@@ -733,6 +753,115 @@ if talktosanslamp == "yes":
     time.sleep(2)
 elif talktosanslamp == "no":
     time.sleep(2)
-print("You leave sans and go to the next room")
+print("You walk towards the exit")
+time.sleep(2)
+print("Sans: atuaclly, hey... hate to bother ya, but can you do me a favor?")
+time.sleep(2)
+print("Sans: i was thinking... my brother's been kind of down lately...")
+time.sleep(2)
+print("Sans: he's never seen a human before. and seeing you might just make his day.")
+time.sleep(2)
+print("Sans: don't worry, he's not dangerous.")
+time.sleep(2)
+print("Sans: even if he tries to be.")
+time.sleep(2)
+print("Sans: thanks a million. i'll be up ahead.")
+time.sleep(2)
+print("Sans walks away")
+time.sleep(2)
+print("You exit the room")
+time.sleep(2)
+print("You are surrounded by trees there are two ways to go..")
+time.sleep(2)
+print("Up or Down")
+aftersansfightupordown = input(": ").lower()
+if aftersansfightupordown == "up":
+    time.sleep(2)
+    print("You encounter a Snowdrake!")
+    time.sleep(2)
+    print("Your total hp is ", + totalhp)
+    print("FIGHT, ACT, ITEM, MERCY")
+    firstsnowdrakefight = input(": ").lower()
+    if firstsnowdrakefight == "mercy":
+        print("Flee")
+        firstsnowdrakefightspareflee = input(": ").lower()
+        if firstsnowdrakefightspareflee == "flee":
+            print("You escaped")
+            time.sleep(2)
+    elif firstsnowdrakefight == "act":
+        print("Check, Laugh")
+        snowdrakechecklaugh = input(": ").lower()
+        if snowdrakechecklaugh == "laugh":
+            print("You laugh at Snowdrake's bad jokes. Snowdrake seems satisfied.")
+            totalgold = totalgold + 5
+            time.sleep(2)
+        if snowdrakechecklaugh == "check":
+            print("Snowdrake: 5 ATK 5 DEF")
+            time.sleep(2)
+            print("Laugh, attack, or flee")
+            snowdrakeafterchecklaughattackorflee = input(": ").lower()
+            if snowdrakeafterchecklaughattackorflee == "laugh":
+                print("You laugh at Snowdrake's bad jokes. Snowdrake seems satisfied.")
+                totalgold = totalgold + 5
+                time.sleep(2)
+            elif snowdrakeafterchecklaughattackorflee == "attack":
+                print("You killed Snowdrake")
+                totalgold = totalgold + 9
+            elif snowdrakeafterchecklaughattackorflee == "flee":
+                print("You escaped")
+    elif firstsnowdrakefight == "item":
+        print(f"You have {butterscotchpie} buttspies")
+        print(f"You have {spiderdonuts} spiderdonuts")
+        snowdrakeitem1 = input("What would you like to use (bpie or sdonut):  ").lower()
+        if snowdrakeitem1 == "bpie" and totallove == 1:
+            totalhp = lvl1maxhp
+            print("Hp maxed out")
+            butterscotchpie - 1
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif snowdrakeitem1 == bpie and totallove == 2:
+            totalhp = lvl2maxhp
+            print("Hp maxed out")
+            butterscotchpie - 1
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif snowdrakeitem1 == "bpie" and totallove == 3:
+            totalhp = lvl3maxhp
+            print("Hp maxed out")
+            butterscotchpie - 1
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif snowdrakeitem1 == "bpie" and totallove == 4:
+            totalhp = lvl4maxhp
+            print("Hp maxed out")
+            butterscotchpie - 1
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif snowdrakeitem1 == "bpie" and totallove == 15:
+            totalhp = lvl5maxhp
+            print("Hp maxed out")
+            butterscotchpie - 1
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif snowdrakeitem1 == "bpie" and totallove == 6:
+            totalhp = lvl6maxhp
+            print("Hp maxed out")
+            butterscotchpie - 1
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif snowdrakeitem1 == "sdonut":
+            print("+6 HP")
+            totalhp = totalhp + 6
+            print("Snowdrake got hungry watching you eat and left for Grillby's")
+        elif firstsnowdrakefight == "fight":
+            print("You killed Snowdrake.")
+            totalgold = totalgold + 9
+            time.sleep(2)
+    print("You go to the up room")
+    time.sleep(2)
+    print("There is a fishing rod on the ground.")
+    time.sleep(2)
+    print("You reel it in")
+    time.sleep(2)
+    print("All that's attached to the end is a photo of a weird-looking monster...")
+    time.sleep(3)
+    print("(Call Me! Here's my number!)")
+    time.sleep(2)
+    print("You decide not to call...")
+print("You go to the right room")
 time.sleep(2)
 os.startfile("credits.py")

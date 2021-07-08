@@ -1,8 +1,11 @@
 # TextTale
 HOW TO RUN:
 
-Open the "TextTale.py" File to run the game
-If for you want to play the demo run "demo.py"
+Open the "Start Game.exe" File to run the game
+
+
+
+Please ignore the "Start Game" folder it just contains files required. Only use "Start Game.exe"
 
 
 

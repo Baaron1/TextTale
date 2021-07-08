@@ -1,0 +1,10 @@
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\bin\Debug\Start Game.exe.config
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\bin\Debug\Start Game.exe
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\bin\Debug\Start Game.pdb
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start Game.csproj.AssemblyReference.cache
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start_Game.Form1.resources
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start_Game.Properties.Resources.resources
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start Game.csproj.GenerateResource.cache
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start Game.csproj.CoreCompileInputs.cache
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start Game.exe
+C:\Users\lgshu\Documents\GitHub\TextTale\Start Game\Start Game\obj\Debug\Start Game.pdb

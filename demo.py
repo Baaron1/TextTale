@@ -1,8 +1,30 @@
+import os
+import time
+print("Installing required packages, this may take a while...")
+time.sleep(1)
+print("This can take up to ten minutes feel free to tab out while you wait")
+time.sleep(1)
+print("If you see an ERROR, don't freak out this probably means you already have the package installed.")
+os.system('cmd /c "pip install pickle"')
+print("Installing next package, please wait...")
+os.system('cmd /c "pip install winsound"')
+time.sleep(2)
+print("Installing next package, please wait...")
+os.system('cmd /c "pip install colored"')
+os.system('cmd /c "pip3 install colored"')
+os.system('cmd /c "python3.exe pip install colored"')
+time.sleep(2)
+print("It seems the packages are finished. Enjoy the game!")
+time.sleep(1)
+
+
 import pickle
 import os
 import sys
 import time
 import random
+import winsound
+import colored
 
 
 totallove = 1
@@ -15,8 +37,13 @@ toriellife = 1
 mettatonlife = 1
 mettatonexlife = 1
 butterscotchpie = 0
+spiderdonuts = 0
+totalgold = 20
 totalfun = random.randint(0, 100)
-child = str(input("name the fallen child:"))
+totalsanstries = 0
+totalpapyrustries = 0
+totalkills = 0
+child = str(input("name the fallen child: "))
 if child == "Gaster" or child == "gaster":
     exit()
 if child == "Flowey" or child == "flowey":
@@ -36,6 +63,10 @@ if fallen == "explore":
     time.sleep(2)
 if fallen == "move on":
     time.sleep(2)
+if fallen == "dev.setfun":
+    setfunlvl = int(input("Welcome developer what do you want to set the fun level to: "))
+    totalfun = setfunlvl
+    print(f"The fun level is now set to {totalfun}")
 print("you see a smiling flower. You approach it.")
 time.sleep(2)
 print("The flower says: 'howdy! I'm flowey, flowey the flower.'")
@@ -86,29 +117,29 @@ time.sleep(2)
 print("You are surrounded by the flower’s bullets")
 time.sleep(3)
 print("Suddenly the flower is hit with a fireball")
-time.sleep(1)
+time.sleep(2)
 print("A goat appears?")
-time.sleep(1)
+time.sleep(2)
 print("The goat: What a terrible creature, torturing such a poor, innocent youth... Ah, do not be afraid, my child. I am Toriel, caretaker of the Ruins... I pass through this place every day to see if anyone has fallen down.")
 time.sleep(4)
 print("Toriel: You must have fallen down... do not worry I will take care of you.")
-time.sleep(1)
-print("Toriel: Please follow me this way")
-time.sleep(1)
-print("You follow Toriel into the next room")
-time.sleep(1)
-print("Toriel: Allow me to educate you on the workings of the ruins... \n The ruins are full of puzles and you must solve them to advance to the next room")
 time.sleep(2)
+print("Toriel: Please follow me this way")
+time.sleep(2)
+print("You follow Toriel into the next room")
+time.sleep(2)
+print("Toriel: Allow me to educate you on the workings of the ruins... \n The ruins are full of puzles and you must solve them to advance to the next room")
+time.sleep(4)
 print("Toriel walks across a series of buttons")
-time.sleep(1)
+time.sleep(2)
 print("After completing the process a door opens...")
-time.sleep(1)
+time.sleep(2)
 print("You follow Toriel to the next room")
-time.sleep(1)
+time.sleep(2)
 print("Toriel: Listen child... I am going to ask you to do something very challenging... \n I need you to walk to the end of this room... by yourself.")
-time.sleep(1)
+time.sleep(4)
 print("Toriel runs down the hall")
-time.sleep(1)
+time.sleep(2)
 print("You follow her")
 time.sleep(3)
 print("You continue to follow her")
@@ -116,7 +147,7 @@ time.sleep(5)
 print("...")
 time.sleep(5)
 print("You are almost to the end of the hallway")
-time.sleep(1)
+time.sleep(2)
 print("You see a pillar... look behind it? (yes or no)")
 lookbehindpillar = input(":")
 if lookbehindpillar == "yes":
@@ -128,13 +159,13 @@ if lookbehindpillar == "yes":
 if lookbehindpillar == "no":
     time.sleep(1)
 print("You reach the end of the hallway")
-time.sleep(1)
+time.sleep(2)
 print("Toriel comes out from behind the pillar")
-time.sleep(1)
+time.sleep(2)
 print("Toriel: It is okay child do not worry I did not leave you I am sorry if I frightend you...")
-time.sleep(1)
+time.sleep(3)
 print("Toriel: I have to run an erand. \n Please remain in this room until I get back... it is dangerous to continue.")
-time.sleep(1)
+time.sleep(3)
 time.sleep(1)
 print("Toriel: on second thought how about I give you a cell phone.")
 time.sleep(2)
@@ -156,6 +187,7 @@ if firstfroggitcomporfight == "fight":
     time.sleep(1)
     print("You killed the froggit...")
     time.sleep(2)
+    totalkills = totalkills + 1
     print("You gained LOVE!")
     totallove = totallove + 1
     print(f"Your love is now at {totallove}")
@@ -193,9 +225,9 @@ time.sleep(2)
 print("You see three rocks with three similar pads and more spikes")
 time.sleep(2)
 print("You move the rocks onto the pads")
-time.sleep(1)
+time.sleep(2)
 print("The spikes fall into the ground")
-time.sleep(1)
+time.sleep(2)
 print("There are a pile of leaves on the floor")
 time.sleep(2)
 print("There is a ghost laying on top of them")
@@ -212,15 +244,16 @@ print("Here comes Nabstablook")
 time.sleep(1)
 whattodonabfirst = input("Attack or Cheer")
 time.sleep(1)
-if whattodonabfirst == "Cheer":
+if whattodonabfirst == "Cheer" or whattodonabfirst == "cheer":
     print("Nabstablook: heh...")
-    time.sleep(1)
+    time.sleep(2)
     print("Nabstablook attacks!")
-    time.sleep(1)
+    time.sleep(2)
     print("You take 1 damage!")
+    totalhp = totalgp - 1
     time.sleep(1)
     print("You tell nabstablook a joke...")
-    time.sleep(1)
+    time.sleep(2)
     print("Nabstablook: heh heh...")
     time.sleep(2)
     print("Nabstablook wants to show you something...")
@@ -236,21 +269,32 @@ if whattodonabfirst == "Cheer":
     time.sleep(2)
     print("I will get out of your way now...")
     time.sleep(2)
-if whattodonabfirst == "Attack":
+    if totallove <= 1:
+        totalhp = 20
+    elif totallove == 2:
+        totalhp = 24
+    elif totallove == 3:
+        totalhp = 28
+    elif totallove == 4:
+        totalhp = 32
+if whattodonabfirst == "Attack" or whattodonabfirst == "attack":
     print("Nabstablook:... You know you can't kill me right? I'm like... A ghost and all.")
     time.sleep(2)
     print("Nabstablook: This is awkward I will just get out of your way")
+    time.sleep(2)
+    print("Nabstablook vanishes")
     time.sleep(2)
 print("You walk past the leaves nabstablook was on")
 time.sleep(2)
 print("You encounter a whimsun!")
 time.sleep(2)
 print("Attack or Spare")
-killorsparewhismunfirst = input(":")
-if killorsparewhismunfirst == "Attack":
+killorsparewhismunfirst = input(": ")
+if killorsparewhismunfirst == "attack" or killorsparewhismunfirst == "Attack":
     print("You killed the whimsun in 1 shot!")
     time.sleep(2)
     totallove = totallove + 1
+    totalkills = totalkills + 1
     print("Your LOVE has increased!")
     print(f"You are now at {totallove} LOVE!")
     time.sleep(1)
@@ -277,6 +321,8 @@ if spiderbakesaleornah == "right":
         if buyadonutorno == "yes":
             print("You purchased a donut")
             time.sleep(2)
+            totalgold = totalgold - 7
+            spiderdonuts = spiderdonuts + 1
 print("You enter the 'up' room")
 time.sleep(2)
 print("You are outside!")
@@ -314,7 +360,7 @@ if newhomewaitfortoriel == "wait" or newhomewaitfortoriel == "Wait":
     print("You explore the house")
 if newhomewaitfortoriel == "explore" or newhomewaitfortoriel == "Explore":
     time.sleep(1)
-print("There are two rooms...")
+print("There are three rooms...")
 newhomeroom12or3 = input("Room 1 2 or 3?")
 if newhomeroom12or3 == "3":
     print("You see a sign")
@@ -323,7 +369,7 @@ if newhomeroom12or3 == "3":
     time.sleep(1)
     print("You look at room 2")
     time.sleep(3)
-    print("Oh no it seems this is Toriel's room.")
+    print("Oh no, it seems this is Toriel's room.")
     time.sleep(2)
     print("You are a decent human so you do not go in")
     time.sleep(2)
@@ -504,16 +550,29 @@ if fighttoriel1 == "attack" or fighttoriel1 == "Attack":
     gethitbytorielmurder1 = random.randint(1, 10)
     if gethitbytorielmurder1 >= 6:
         print("Toriel's attack hits you lose 3 hp")
-        totalhp = totalhp - 1
+        totalhp = totalhp - 3
         time.sleep(2)
     print("You hit Toriel again")
     toriellife = toriellife - 1
+    totalkills = totalkills + 1
     print("You...")
     time.sleep(1)
     print("Really hate me that much?")
     time.sleep(2)
     print("Toriel turns into dust")
     time.sleep(2)
+    totallove = totallove + 1
+    print(f"You gained LOVE! You are now at {totallove} LOVE")
+    time.sleep(2)
+    if totallove <= 1:
+        totalhp = 20
+    elif totallove == 2:
+        totalhp = 24
+    elif totallove == 3:
+        totalhp = 28
+    elif totallove == 4:
+        totalhp = 32
     print("You walk through the door")
+time.sleep(2)
 print("TEXTTALE")
 time.sleep(5)

@@ -11,6 +11,8 @@ os.system('cmd /c "pip install winsound"')
 time.sleep(2)
 print("Installing next package, please wait...")
 os.system('cmd /c "pip install colored"')
+os.system('cmd /c "pip3 install colored"')
+os.system('cmd /c "python3.exe pip install colored"')
 time.sleep(2)
 print("It seems the packages are finished. Enjoy the game!")
 time.sleep(1)
@@ -22,7 +24,7 @@ import sys
 import time
 import random
 import winsound
-from colored import *
+import colored
 
 
 totallove = 1
@@ -707,4 +709,30 @@ print("Papyrus: UGH!!! I WILL ATTEND TO MY PUZZLES...")
 time.sleep(2)
 print("Papyrus: AS FOR YOUR WORK? PUT A LITTLE MORE, {0}*BACKBONE{1} INTO IT!!!!".format(fg('yellow'), attr(0)))
 time.sleep(3)
+print("Papyrus: NYEHHEHHEHEHEHEHEHEHEHEHHEEHEHHEHEHE!!!")
+time.sleep(2)
+print("Papyrus walks away")
+time.sleep(2)
+print("He returns")
+time.sleep(1)
+print("Papyrus: HEH!")
+time.sleep(2)
+print("He leaves again")
+time.sleep(2)
+print("Sans: okay, you can come out now.")
+time.sleep(2)
+print("*You come out from behind the lamp*")
+time.sleep(2)
+print("Talk to sans (yes or no)")
+talktosanslamp = input(": ").lower()
+if talktosanslamp == "yes":
+    time.sleep(1)
+    print("Sans: you oughta get going. he might come back. and if he does...")
+    time.sleep(2)
+    print("... you'll have to sit through more of my hilarious jokes.")
+    time.sleep(2)
+elif talktosanslamp == "no":
+    time.sleep(2)
+print("You leave sans and go to the next room")
+time.sleep(2)
 os.startfile("credits.py")

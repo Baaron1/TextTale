@@ -4,6 +4,10 @@ HOW TO RUN:
 Open the "Start Game.exe" File to run the game
 
 
+If you don't already have Python 3 installed please download it or press the "Python" button in out gui to download it automatically
+when downloading Python with this method it is common to get a ERROR message the first time you try simply do it again and it should work fine
+
+
 
 Please ignore the "Start Game" folder it just contains files required. Only use "Start Game.exe"
 
